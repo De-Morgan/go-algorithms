@@ -39,7 +39,7 @@ func Test_lowestValue(t *testing.T) {
 			want1: true,
 		},
 		{
-			name: "lowest value at middle",
+			name: "lowest value in the middle",
 			args: args{
 				value: []int{
 					1, 3, 5, 2, 6, 0, 8, 4, 9,
