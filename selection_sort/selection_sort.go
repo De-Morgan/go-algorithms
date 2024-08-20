@@ -1,4 +1,4 @@
-package main
+package selectionsort
 
 /*
 Selection Sort

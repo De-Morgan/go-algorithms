@@ -1,11 +1,11 @@
-package selectionsort
+package insertionsort
 
 import (
 	"slices"
 	"testing"
 )
 
-func Test_selectionSort(t *testing.T) {
+func Test_insertionSort(t *testing.T) {
 	type args struct {
 		nums []int
 	}
@@ -46,9 +46,9 @@ func Test_selectionSort(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got := tt.args.nums
-			selectionSort(got)
+			insertionSort(got)
 			if !slices.Equal(tt.want, got) {
-				t.Errorf("selectionSort() got = %v, want %v", got, tt.want)
+				t.Errorf("insertionSort() got = %v, want %v", got, tt.want)
 			}
 		})
 	}
